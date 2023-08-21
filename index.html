@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Clima App</title>
+    <link rel="icon" type="image/x-icon" href="/cloud-solid-24.png">
+    <title> Previsão do tempo | César de Moura</title>
 </head>
+
 <body>
 
     <div class="container">
@@ -14,10 +17,10 @@
             <div class="pic-gradient"></div>
             <div class="today-info">
                 <h2>Sexta</h2>
-                <span>20 Agosto 2023</span>
+                <span>28 Julho 2023</span>
                 <div>
                     <i class='bx bx-current-location'></i>
-                        <span>Paris, FR</span>
+                    <span>Recife, BR</span>
                 </div>
             </div>
             <div class="today-weather">
@@ -31,20 +34,51 @@
 
         <div class="right-info">
             <div class="day-info">
-                <span class="title">PRECIPITATION</span>
-                <span class="value"></span>
+                <div>
+                    <span class="title">PRECIPITATION</span>
+                    <span class="value">4 %</span>
+                </div>
+                <div>
+                    <span class="title">HUMIDITY</span>
+                    <span class="value">34 %</span>
+                </div>
+                <div>
+                    <span class="title">WIND SPEED</span>
+                    <span class="value">6 km/h</span>
+                </div>
             </div>
-            div class="day-info">
-                <span class="title">HUMIDITY</span>
-                <span class="value"></span>
+
+            <ul class="days-list">
+                <li>
+                    <i class='bx bx-cloud'></i>
+                    <span>Sat</span>
+                    <span class="day-temp">23°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-sun'></i>
+                    <span>Sun</span>
+                    <span class="day-temp">28°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-rain'></i>
+                    <span>Mon</span>
+                    <span class="day-temp">02°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-drizzle'></i>
+                    <span>Tue</span>
+                    <span class="day-temp">14°C</span>
+                </li>
+            </ul>
+
+            <div class="btn-container">
+                <button class="loc-button">Search Location</button>
             </div>
-            div class="day-info">
-                <span class="title">WIND</span>
-                <span class="value"></span>
-            </div>
+
         </div>
 
     </div>
-    
+
 </body>
+
 </html>
