@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/cloud-solid-24.png">
+    <link rel="icon" type="image/x-icon" href="src/cloud-solid-24.png">
     <title> Previsão do tempo | César de Moura</title>
 </head>
 
 <body>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p><strong>Bem-vindo(a)!🖖</strong></p>
+            <p>Esse site foi desenvolvido com o intuito de ser um estudo com foco em IU para o desenvolvimento </p>
+            <button class="modal-button" onclick="fecharModal()">Okay</button>
+        </div>
+    </div>
+
+    <script>
+        // Exibir a caixa de diálogo modal quando a página carregar
+        window.onload = function() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'flex';
+        };
+
+        // Função para fechar a caixa de diálogo modal
+        function fecharModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+    </script>
 
     <div class="container">
         <div class="left-info">
@@ -28,22 +50,22 @@
                 <h1 class="weather-temp">
                     25°C
                 </h1>
-                <h3>Sunny</h3>
+                <h3>Nublado</h3>
             </div>
         </div>
 
         <div class="right-info">
             <div class="day-info">
                 <div>
-                    <span class="title">PRECIPITATION</span>
+                    <span class="title">PRECIPITAÇÃO</span>
                     <span class="value">4 %</span>
                 </div>
                 <div>
-                    <span class="title">HUMIDITY</span>
-                    <span class="value">34 %</span>
+                    <span class="title">HUMIDADE</span>
+                    <span class="value">90 %</span>
                 </div>
                 <div>
-                    <span class="title">WIND SPEED</span>
+                    <span class="title">VENTO</span>
                     <span class="value">6 km/h</span>
                 </div>
             </div>
@@ -51,28 +73,33 @@
             <ul class="days-list">
                 <li>
                     <i class='bx bx-cloud'></i>
-                    <span>Sat</span>
+                    <span>Sab</span>
                     <span class="day-temp">23°C</span>
                 </li>
                 <li>
                     <i class='bx bx-sun'></i>
-                    <span>Sun</span>
+                    <span>Dom</span>
                     <span class="day-temp">28°C</span>
                 </li>
                 <li>
                     <i class='bx bx-cloud-rain'></i>
-                    <span>Mon</span>
+                    <span>Seg</span>
                     <span class="day-temp">02°C</span>
                 </li>
                 <li>
                     <i class='bx bx-cloud-drizzle'></i>
-                    <span>Tue</span>
+                    <span>Ter</span>
+                    <span class="day-temp">14°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-drizzle'></i>
+                    <span>Qua</span>
                     <span class="day-temp">14°C</span>
                 </li>
             </ul>
 
             <div class="btn-container">
-                <button class="loc-button">Search Location</button>
+                <button class="loc-button">Buscar Localização</button>
             </div>
 
         </div>
